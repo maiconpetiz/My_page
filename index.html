@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>maiconpetiz.dev</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-<link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 
 
@@ -23,47 +25,54 @@
 
       <nav class="menu-wide">
         <ul>
-          <li><a href="#">Início</a></li>
-          <li><a href="#">Stacks</a></li>
-          <li><a href="#">Sobre</a></li>
-          <li><a href="#">Projetos</a></li>
+          <li><a href="#topo" style="transition: 5s">Início</a></li>
+          <li><a href="#stacks" style="transition: 5s">Stacks</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#portfolio" >Projetos</a></li>
         </ul>
       </nav>
-      
+
       <div class="contato">
-        <a href="#">
+        <a href="https://wa.me/5551982107669" target="_blank">
           <button>Contato</button>
         </a>
       </div>
 
-      <div class="menu-mobile">
+      <div class="btn-abrir" id="btn-menu">
+        <i class="bi bi-list"></i>
+      </div>
+
+      <div class="menu-mobile" id="menu-mobile">
         <div class="btn-fechar">
           <i class="bi bi-x-lg"></i>
         </div>
 
         <nav>
           <ul>
-            <li><a href="#">Início</a></li>
-            <li><a href="#">Stacks</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Projetos</a></li>
-            <li><a href="#">Contato</a></li>
+            <li><a href="#topo">Início</a></li>
+            <li><a href="#stacks">Stacks</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#portfolio">Projetos</a></li>
+            <li><a href="https://wa.me/5551982107669" target="_blank">Contato</a></li>
+            <li><a href="arquivos/CV Maicon Petiz.pdf" target="_blank">Download Currículo</a></li>
           </ul>
         </nav>
-
+      </div>
+      <div class="overlay-menu" id="overlay-menu">
       </div>
     </div>
   </header>
   <main>
-    <section class="topo">
+    <section class="topo" id="topo">
       <div class="page">
         <div class="flex">
           <div class="texto">
             <h1>Desenvolvedor <span>Web</span> & <span>Mobile</span></h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, impedit voluptatum. Cumque corporis praesentium ipsa delectus ipsam maxime facilis eum quidem enim hic a provident molestias autem, magnam nostrum iusto!</p>
+            <p>Desenvolvedor web e de aplicativos com experiência em criação de sites responsivos e aplicativos móveis para diversas plataformas. Proficiente em linguagens de programação como HTML, CSS, JavaScript e Flutter. Buscando sempre aprender novas ferramentas de desenvolvimento que venham agregar valor aos sistemas web e aplicativos por mim desenvolvidos.
+            </p>
             <div class="contato">
-              <a href="#">
-                <button>Entre em contato</button>
+              <a href="arquivos/CV Maicon Petiz.pdf" target="_blank">
+                <button>Download Cúrriculo</button>
               </a>
             </div>
           </div>
@@ -75,7 +84,7 @@
       </div>
     </section>
 
-    <section class="stacks">
+    <section class="stacks" id="stacks">
       <div class="page">
         <h2 class="titulo">Minhas <span>Stacks</span>.</h2>
         <div class="flex">
@@ -91,7 +100,7 @@
             <i class="bi bi-phone-vibrate"></i>
             <h3>Apps</h3>
             <li>Dart</li>
-            <li>Flutter</li>            
+            <li>Flutter</li>
           </div>
           <div class="stacks-box">
             <i class="bi bi-code-square"></i>
@@ -104,38 +113,50 @@
       </div>
     </section>
 
-    <section class="sobre">
+    <section class="sobre" id="sobre">
       <div class="page">
-          <div class="flex">
-            <div class="img-sobre">
-              <img src="img/myself.jpeg" alt="">
-            </div>
+        <div class="flex">
+          <div class="img-sobre">
+            <img src="img/myself.jpeg" alt="">
+          </div>
 
-            <div class="txt-sobre">
-              <h2>MUITO PRAZER, <span>SOU MAICON PETIZ.</span></h2>
-              <P>
-                Sou Desenvolvedor Web com expertise em HTML, CSS, JavaScript, GitHub e SQL, e Mobile com as tecnologias Dart e FLutter. Costumo criar projetos pessoais utilizando essas tecnologias para aprimorar meus conhecimentos e me manter atualizado.
-              </P>
-              <P>
-                Atualmente, cursando bacharel em Engenharia de Software, estou buscando uma transição de carreira para a área de TI, onde possuo grande interesse e paixão por tecnologia. Estou determinado a crescer na área e contribuir para o desenvolvimento de soluções inovadoras. Estou aberto a novas oportunidades,  desafios e pronto para aplicar minhas habilidades técnicas e conhecimento em desenvolvimento web e mobile em projetos que possam agregar valor a minha carreira e à sua organização.
-              </P>
-              <div class="btn">
-                <a href=""><button><i class="bi bi-github"></i></button></a>
-                <a href=""><button><i class="bi bi-linkedin"></i></button></a>
-                <a href=""><button><i class="bi bi-whatsapp"></i></button></a>
-              </div>
+          <div class="txt-sobre">
+            <h2>MUITO PRAZER, <span>SOU MAICON PETIZ.</span></h2>
+            <P>
+              Sou Desenvolvedor Web com expertise em HTML, CSS, JavaScript, GitHub e SQL, e Mobile com as tecnologias
+              Dart e FLutter. Costumo criar projetos pessoais utilizando essas tecnologias para aprimorar meus
+              conhecimentos e me manter atualizado.
+            </P>
+            <P>
+              Atualmente, cursando bacharel em Engenharia de Software, estou buscando uma transição de carreira para a
+              área de TI, onde possuo grande interesse e paixão por tecnologia. Estou determinado a crescer na área e
+              contribuir para o desenvolvimento de soluções inovadoras. Estou aberto a novas oportunidades, desafios e
+              pronto para aplicar minhas habilidades técnicas e conhecimento em desenvolvimento web e mobile em projetos
+              que possam agregar valor a minha carreira e à sua organização.
+            </P>
+            <div class="btn">
+              <a href="https://github.com/maiconpetiz" target="_blank"><button><i class="bi bi-github"></i></button></a>
+              <a href="https://www.linkedin.com/in/maiconpetiz/" target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
+              <a href="https://wa.me/5551982107669" target="_blank"><button><i class="bi bi-whatsapp"></i></button></a>
             </div>
           </div>
+        </div>
       </div>
     </section>
 
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
       <div class="page">
         <h2 class="titulo">Meu <span>Portfólio</span>.</h2>
         <div class="flex">
-          <div class="img-project" style="background-image: url(img/reciboonline.jpg);"><div class="overlay">Recibo Online</div></div>
-          <div class="img-project" style="background-image: url(img/projeto-android.png);"><div class="overlay">História do Android</div></div>
-          <div class="img-project" style="background-image: url(img/projeto-cordel.png);"><div class="overlay">Cordel Moderno</div></div>
+          <div class="img-project" style="background-image: url(img/reciboonline.jpg);">
+            <div class="overlay">Recibo Online</div>
+          </div>
+          <div class="img-project" style="background-image: url(img/projeto-android.png);">
+            <div class="overlay">História do Android</div>
+          </div>
+          <div class="img-project" style="background-image: url(img/projeto-cordel.png);">
+            <div class="overlay">Cordel Moderno</div>
+          </div>
         </div>
       </div>
     </section>
@@ -148,19 +169,20 @@
               <img src="img/logo.png" alt="logo">
             </div>
             <div class="btn">
-              <a href=""><button><i class="bi bi-github"></i></button></a>
-              <a href=""><button><i class="bi bi-linkedin"></i></button></a>
-              <a href=""><button><i class="bi bi-whatsapp"></i></button></a>
+              <a href="https://github.com/maiconpetiz" target="_blank"><button><i class="bi bi-github"></i></button></a>
+              <a href="https://www.linkedin.com/in/maiconpetiz/" target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
+              <a href="https://wa.me/5551982107669" target="_blank"><button><i class="bi bi-whatsapp"></i></button></a>
             </div>
           </div>
         </div>
         <div class="line-footer borda">
-          <p><i class="bi bi-envelope"> <a href="mailto:maiconpetiz@outlook.com"> maiconpetiz@outlook.com</a></i></p>          
+          <p><i class="bi bi-envelope"> <a href="mailto:maiconpetiz@outlook.com"> maiconpetiz@outlook.com</a></i></p>
         </div>
       </div>
     </footer>
   </main>
-  
-  
+
+
 </body>
+
 </html>
