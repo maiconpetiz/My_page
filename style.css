@@ -129,7 +129,7 @@ header nav.menu-wide ul li {
   display: none;
 }
 
-.contato button {
+.contato, .curriculo button {
   padding: 10px 40px;
   font-size: 18px;
   font-weight: 600;
@@ -138,6 +138,7 @@ header nav.menu-wide ul li {
   border-radius: 30px;
   cursor: pointer;
 }
+
 
 h2.titulo {
   color: white;
@@ -409,6 +410,10 @@ footer .line-footer p a {
 
   .topo .texto p {
     text-align: justify;
+  }
+
+  .curriculo {
+    text-align: center;
   }
 
   section.stacks {
