@@ -129,7 +129,17 @@ header nav.menu-wide ul li {
   display: none;
 }
 
-.contato, .curriculo button {
+.contato button {
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #00AFEF;
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.curriculo button {
   padding: 10px 40px;
   font-size: 18px;
   font-weight: 600;
@@ -182,6 +192,7 @@ button:hover {
   color: white;
   font-size: 20px;
   margin: 40px 0;
+  text-align: justify;
 }
 
 .button {
