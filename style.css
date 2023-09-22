@@ -484,7 +484,10 @@ footer .line-footer p a {
   .imagem img {
     width: 100%;
     max-width: 360px;
+    animation: none;
+  
   }
+
 
   .topo .texto p {
     text-align: justify;
