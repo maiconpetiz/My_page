@@ -32,7 +32,7 @@ header {
 }
 
 .logo img {
-  max-width: 100px;
+  max-width: 50px;
 }
 
 header > .page {
@@ -64,7 +64,7 @@ header nav.menu-wide ul li {
 
 /* MENU MOBILE */
 .btn-abrir i {
-  color:#00AFEF;
+  color: #13C3F4;
   font-size: 50px;
 }
 
@@ -93,7 +93,7 @@ header nav.menu-wide ul li {
 }
 
 .menu-mobile .btn-fechar i {
-  color: #00AFEF;
+  color: #13C3F4;
   font-size: 30px;
 
 }
@@ -111,7 +111,7 @@ header nav.menu-wide ul li {
 }
 
 .menu-mobile nav ul li a:hover {
-  background-color: #00AFEF;
+  background-color: #13C3F4;
 }
 
 .overlay-menu {
@@ -133,7 +133,7 @@ header nav.menu-wide ul li {
   padding: 10px 40px;
   font-size: 18px;
   font-weight: 600;
-  background-color: #00AFEF;
+  background-color: #13C3F4;
   border: 0;
   border-radius: 30px;
   cursor: pointer;
@@ -143,7 +143,7 @@ header nav.menu-wide ul li {
   padding: 10px 40px;
   font-size: 18px;
   font-weight: 600;
-  background-color: #00AFEF;
+  background-color: #13C3F4;
   border: 0;
   border-radius: 30px;
   cursor: pointer;
@@ -157,11 +157,11 @@ h2.titulo {
 }
 
 h2.titulo span {
-  color: #00AFEF;
+  color: #13C3F4;
 }
 
 button:hover {
-  box-shadow: 0px 0px 8px #00AFEF;
+  box-shadow: 0px 0px 8px #13C3F4;
 }
 
 /* TOPO SITE*/
@@ -179,12 +179,12 @@ button:hover {
   gap: 150px;
 }
 
-.topo .wraper {
+/* .topo .wraper {
   display: flex;
   overflow: hidden;
-}
+} */
 
-.wraper .texto-dinamico {
+/* .wraper .texto-dinamico {
   margin-left: 20px;
   height: 60px;
 }
@@ -209,7 +209,7 @@ button:hover {
   background: #212121;
   width: 100%;
   height: 100%;
-  border-left: 2px solid #00AFEF;
+  border-left: 2px solid #13C3F4;
   animation: typing 4s steps(10) infinite;
 }
 
@@ -225,16 +225,16 @@ button:hover {
 .wraper .texto-dinamico li:nth-of-type(2) h1::after {
   animation-name: typing-short;
   animation-timing-function: steps(15);
-}
+} */
 
-@keyframes typing-short {
+/* @keyframes typing-short {
   40%, 60% {
     left: 105%;
   }
   100% {
     left: 0;
   }
-}
+} */
 
 .topo .texto h1 {
   color: white;
@@ -242,7 +242,7 @@ button:hover {
 }
 
 .topo .texto h1 span {
-  color: #00AFEF;
+  color: #13C3F4;
 }
 
 .topo .texto p {
@@ -297,7 +297,7 @@ section.stacks .flex {
 
 .stacks .stacks-box i {
   font-size: 70px;
-  color: #00AFEF;
+  color: #13C3F4;
 }
 
 .stacks .stacks-box h3 {
@@ -336,7 +336,7 @@ section.sobre .flex {
 }
 
 .sobre .txt-sobre h2 span {
-  color: #00AFEF;
+  color: #13C3F4;
   display: block;
 }
 
@@ -350,7 +350,7 @@ section.sobre .flex {
   height: 60px;
   border-radius: 50%;
   border: none;
-  background-color: #00AFEF;
+  background-color: #13C3F4;
   font-size: 22px;
   cursor: pointer;
   margin: 0 5px;
@@ -400,6 +400,11 @@ section.portfolio .flex {
   opacity: 0;
 }
 
+.overlay a {
+  text-decoration: none;
+  color: #00AFEF;
+}
+
 .overlay:hover {
   opacity: 1;
 }
@@ -407,7 +412,7 @@ section.portfolio .flex {
 /* Rodapé */
 
 .logo-footer img {
-  width: 80px;
+  height: 40px;
 }
 
 footer {
@@ -425,11 +430,11 @@ footer .line-footer {
 }
 
 .borda {
-  border-top: 2px solid #00AFEF;
+  border-top: 2px solid #13C3F4;
 }
 
 footer .line-footer p i {
-  color: #00AFEF;
+  color: #13C3F4;
   font-size: 20px;
 }
 
@@ -441,6 +446,12 @@ footer .line-footer p a {
   /* classes gerais */
   .btn-abrir {
     display: block;
+}
+
+@media screen and (max-width: 800px) {
+  .img-sobre img {
+    display: none;
+  }
 }
 
   .topo .flex {
